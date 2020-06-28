@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#23232456"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:textSize="16dp"
+           android:textStyle="bold"
+           android:textColor="@color/colorPrimary"
+           android:text="Choose Category"
+           android:layout_marginBottom="50dp"
+           ></TextView>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"></Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+
+        <Button
+            android:id="@+id/openAudioFiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Upload Song"
+            android:onClick="openAudioFiles"
+            android:textSize="16sp"></Button>
+
+        <TextView
+            android:id="@+id/textViewSongFileSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="No file Selected"></TextView>
+
+
+<!--        <Button-->
+<!--            android:id="@+id/buttonUpload"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="upload"-->
+<!--            android:textStyle="bold"></Button>-->
+
+   </LinearLayout>
+    <ProgressBar
+        android:id="@+id/processbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"></ProgressBar>
+            <Button
+                android:id="@+id/buttonUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="uploadFileTofirebase"
+                android:text="upload"
+                android:textStyle="bold"></Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:id="@+id/title"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="album"
+            android:id="@+id/album"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="artist"
+             android:id="@+id/artist"
+             android:textStyle="bold"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dataa"
+            android:id="@+id/dataa"
+            android:textStyle="bold"></TextView>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="duration"
+               android:id="@+id/duration"
+               android:textStyle="bold"></TextView>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView"></ImageView>
+    </LinearLayout>
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/openimageuploadActivity"
+               android:onClick="openAlbumUploadsActivity"
+               android:text="open upload album activity"
+               ></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listenmusic"
+        android:text="Listen Music"
+        ></Button>
+
+</LinearLayout>
